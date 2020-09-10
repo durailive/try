@@ -12,6 +12,8 @@ node {
         /* Push the container to the custom Registry */
         customImage.push()
     }
-    stage('Image pushed to dockerhub'){}
+    stage('Image pushed to dockerhub'){
+        docker container run -it venkateshdevops2020/alpinebuild_3.11_jdk /bin/sh
+    }
 }
 }
